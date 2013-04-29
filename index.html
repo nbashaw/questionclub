@@ -3,14 +3,11 @@
 <head>
   <title>Question Club</title>
   <style>
-    @font-face {
-      font-family: 'avenir';
-      src: url('Avenir.ttc');
-    }
+    @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
     .container {
       background: rgb(141,187,25);
       color: #fff;
-      font-family: 'avenir';
+      font-family: 'lato';
       border: 40px solid #fff;
     }
     header {
@@ -45,10 +42,13 @@
     }
     .answers {
       padding: 0;
+      margin-top: 50px;
     }
     .answers li {
       display: inline-block;
       margin: 0 20px;
+      vertical-align: top;
+      max-width: 160px;
     }
     .answers a {
       width: 150px;
@@ -58,11 +58,52 @@
       display: inline-block;
       border: 10px solid #fff;
     }
+    .answers h3 {
+      margin-bottom: 0;
+    }
+    .answers p {
+      margin-top: 10px; 
+    }
     a:hover {
-      border-color: #EB974E;
+      border-color: #00679d;
     }
     a.ryan {
       background-position: 100%;
+    }
+    .about {
+      background: #fff;
+      color: #aaa;
+    }
+    .about ul {padding: 0;}
+    .about ul li {
+      display: inline-block;
+      max-width: 150px;
+      margin: 0 20px;
+      vertical-align: top;
+    }
+    .about a {
+      color: #3498db;
+    }
+    .email input {
+      font-size: 20px;
+      padding: 30px;
+      border: 0;
+      font-family: 'lato';
+    }
+    .email input:focus {
+      outline: 0;
+    }
+    .email input[type=email] {
+      width: 400px;
+    }
+    .email input[type=submit] {
+      background: #3498db;
+      font-weight: bold;
+      color: #fff;
+    }
+    .email input[type=submit]:hover {
+      cursor: pointer;
+      background: #00679d;
     }
   </style>
 </head>
@@ -80,13 +121,66 @@
     <section class="blue">
       <p>The answers:</p>
       <ul class="answers">
-        <li><a class="" style="background-image: url(adii.jpg)" href="#"></a></li>
-        <li><a class="ryan" style="background-image: url(ryan.jpg)" href="#"></a></li>
-        <li><a class="" style="background-image: url(nathank.png)" href="#"></a></li>
-        <li><a class="" style="background-image: url(jon.png)" href="#"></a></li>
-        <li><a class="" style="background-image: url(nathanb.png)" href="#"></a></li>
+        <li>
+          <a class="" style="background-image: url(adii.jpg)" href="http://adii.me/money-mouth" target="blank"></a>
+          <h3>Adii Pienaar</h3>
+          <p>Co-Founder,<br>WooThemes</p>
+        </li>
+        <li>
+          <a class="ryan" style="background-image: url(ryan.jpg)" href="#" target="blank"></a>
+          <h3>Ryan Hoover</h3>
+          <p>Director of Product,<br>PlayHaven</p>
+        </li>
+        <li>
+          <a class="" style="background-image: url(nathank.png)" href="http://ninjasandrobots.com/alone" target="blank"></a>
+          <h3>Nathan Kontny</h3>
+          <p>Founder,<br>Draft</p>
+        </li>
+        <li>
+          <a class="" style="background-image: url(jon.png)" href="#" target="blank"></a>
+          <h3>Jon Gold</h3>
+          <p>Designer/Hacker,<br>MakeShift</p>
+        </li>
+        <li>
+          <a class="" style="background-image: url(nathanb.png)" href="https://medium.com/lets-make-things/4acf7d8b8c78" target="blank"></a>
+          <h3>Nathan Bashaw</h3>
+          <p>Product,<br>General Assembly</p>
+        </li>
       </ul>
     </section>
+    <section class="about">
+      <ul>
+        <li>
+          <h3>Who?</h3>
+          <p>The Question Club was organized primarily by <a href="http://twitter.com/rrhoover" target="blank">Ryan Hoover</a> and <a href="http://twitter.com/nbashaw" target="blank">Nathan Bashaw</a></p>
+        </li>
+        <li>
+          <h3>What?</h3>
+          <p>It's simple, really. We pose a question to a respected group of bloggers, and post their answers here.</p>
+        </li>
+        <li>
+          <h3>When?</h3>
+          <p>We're not sure yet. It depends on how well this goes. Probably once a month-ish.</p>
+        </li>
+        <li>
+          <h3>Where?</h3>
+          <p>The bloggers posts live on their own blogs, we just curate and link to them.</p>
+        </li>
+        <li>
+          <h3>Why?</h3>
+          <p>We wanted blogging to be more fun, and to have more of a community feel.</p>
+        </li>
+      </ul>
+    </section>
+    <section class="email">
+      <h2>Want us to let you know when we do this again?</h2>
+      <form action="http://questionclub.us4.list-manage.com/subscribe/post?u=01ecf72db4fc3ccc883c9d357&amp;id=5709490645" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <input type="email" placeholder="Type your email here" value="" name="EMAIL">
+        <input type="submit" name="subscribe">
+      </form>
+    </section>
   </div>
+  <script>
+  </script>
 </body>
 </html>
